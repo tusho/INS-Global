@@ -33,9 +33,9 @@ li {
 /* Footer Section */
 
 .navbar.navbar-default.navbar-fixed-bottom {
-  padding: 0;
+  padding: 10 0;
 }
 
-.nav-footer-text {
-  padding: 10 0 0 0;
+.navbar-btn.btn-outline-primary.btn.pull-right {
+  margin-bottom: 1em;
 }
