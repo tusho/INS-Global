@@ -1,0 +1,41 @@
+li {
+  padding-right: 50px;
+}
+
+/* .logo.img-fluid {
+  max-width: 10%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+} */
+
+.logo.img-fluid {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.logo-small.img-fluid {
+  height: 80px;
+  border: none;
+}
+
+
+.description {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.newsletter-button {
+  display: inline-block;
+  margin-left: auto;
+}
+
+/* Footer Section */
+
+.navbar.navbar-default.navbar-fixed-bottom {
+  padding: 0;
+}
+
+.nav-footer-text {
+  padding: 10 0 0 0;
+}
