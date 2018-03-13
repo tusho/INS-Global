@@ -1,51 +1,131 @@
-
-/* html {
-  position: relative;
-  min-height: 100%;
-} */
-
 body {
-  max-width: 992px;
+  max-width: calc(992px - 10%);
   margin-bottom: 60px;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-/* ~~~~~~~Footer~~~~~~~ */
+.logo.img-responsive {
+  display: block;
+  margin: auto;
+  padding: 1em 0 0 0;
+  max-width: 80%;
+  height: auto;
+}
+
+hr {
+  border-top: 1px solid #231f20;
+}
+
+.header-title {
+  font-family: 'avenir-medium', 'sans-serif';
+  text-align: center;
+  font-size: 0.7em;
+}
+
+
+.navbar li:first-child {
+  padding-left: 0;
+}
+
+.navbar li {
+  padding-left: 40px;
+}
+
+.navbar a{
+  font-family: 'avenir-medium', 'sans-serif';
+  text-transform: uppercase;
+  color: white;
+}
+
+.navbar a:hover {
+  color: #505050;
+}
+
+.collapse.navbar-collapse {
+  background: #282828;
+}
+
+.navbar.navbar-expand-sm {
+  padding: 0;
+}
+
+/* ~~~~~~~~~~FOOTER~~~~~~~~~~ */
 
 .footer {
-  position: absolute;
+  position: fixed;
+  background: white;
   width: 90%;
-  max-width: 992px;
+  max-width:   calc(992px - 10%);
   bottom: 0;
   height: 60px;
 }
 
 .form-input {
   width: 100%;
-  background: #2b2a29;
+  background: #282828;
   border-style: solid;
+  padding-left: 0.5em;
+}
+
+.form-input::-webkit-input-placeholder {
+  font-family: 'avenir-roman', 'sans-serif';
   color: white;
 }
 
-.form-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
-    opacity: 1; /* Firefox */
+.form-input:-ms-input-placeholder {
+  font-family: 'avenir-roman', 'sans-serif';
+  color: white;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: white;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: white;
-}
 .submit-button {
   float: right;
-}
-
-.submit-button {
   color: white;
   background-color: #2b2a29;
   border-color: #2b2a29;
+}
+
+
+/* ~~~~~~~~~~Media Queries~~~~~~~~~~ */
+
+@media (min-width: 576px) {
+  .divider-header-top {
+    width: 70%;
+  }
+  .header-title {
+    font-size: 1em;
+  }
+  .navbar a {
+    font-size: 0.76em;
+  }
+}
+
+@media (min-width: 720px) {
+  .logo.img-responsive {
+    max-width: 130px;
+  }
+  .navbar a {
+      font-size: 1em;
+    }
+}
+
+@media (min-width: 960px) {
+  body {
+    margin: auto;
+  }
+  .footer {
+    margin: auto;
+  }
+}
+
+/* ~~~~~~~~~~Fonts~~~~~~~~~~ */
+
+@font-face {
+    font-family: "avenir-medium";
+    src: url(fonts/avenir-medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "avenir-roman";
+    src: url(fonts/avenir-roman.ttf) format("truetype");
 }
