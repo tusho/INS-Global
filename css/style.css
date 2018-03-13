@@ -1,57 +1,51 @@
 
-/* ********Homepage******** */
+/* html {
+  position: relative;
+  min-height: 100%;
+} */
 
 body {
-  margin-bottom: 2em;
+  max-width: 992px;
+  margin-bottom: 60px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-li {
-  padding-right: 50px;
-}
+/* ~~~~~~~Footer~~~~~~~ */
 
-
-.logo.img-fluid {
-  margin-top: 1.5em;
-  margin-bottom: 1em;
-}
-
-.logo-small.img-fluid {
-  height: 80px;
-  border: none;
-}
-
-
-.description {
-  margin-top: 1em;
-  margin-bottom: 2em;
-}
-
-.newsletter-button {
-  display: inline-block;
-  margin-left: auto;
-}
-
-/* Footer Section */
-
-.signup-footer {
-  background: white;
-  position: fixed;
-  width: 100%;
+.footer {
+  position: absolute;
+  width: 90%;
+  max-width: 992px;
   bottom: 0;
+  height: 60px;
 }
 
-.navbar.navbar-default.navbar-fixed-bottom {
-  padding: 10 0;
+.form-input {
+  width: 100%;
+  background: #2b2a29;
+  border-style: solid;
+  color: white;
 }
 
-.navbar-btn.btn-outline-primary.btn.pull-right {
-  margin-bottom: 1em;
+.form-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
 }
 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
 
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+.submit-button {
+  float: right;
+}
 
-/* ********ABOUT US******** */
-
-.content-about {
-  margin-top: 4em;
+.submit-button {
+  color: white;
+  background-color: #2b2a29;
+  border-color: #2b2a29;
 }
