@@ -1,8 +1,12 @@
 body {
   max-width: calc(992px - 10%);
-  margin-bottom: 60px;
+  margin-bottom: 90px;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+p {
+    font-family: 'avenir-roman', 'sans-serif';
 }
 
 .logo.img-responsive {
@@ -24,13 +28,7 @@ hr {
 }
 
 
-.navbar li:first-child {
-  padding-left: 0;
-}
-
-.navbar li {
-  padding-left: 40px;
-}
+/* ~~~~~~~~~~MAIN CONTENT~~~~~~~~~~ */
 
 .navbar a{
   font-family: 'avenir-medium', 'sans-serif';
@@ -42,13 +40,27 @@ hr {
   color: #505050;
 }
 
-.collapse.navbar-collapse {
+
+
+/* ~~~~~~~~~~MAIN CONTENT~~~~~~~~~~ */
+
+.big-box {
   background: #282828;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.navbar.navbar-expand-sm {
-  padding: 0;
+.main h2 {
+  font-family: 'avenir-medium', 'sans-serif';
+  font-size: 1.4em;
+  color: #f1afc9;
 }
+
+.main p {
+  padding: 0.5em 0 0 0.1em;;
+}
+
+
 
 /* ~~~~~~~~~~FOOTER~~~~~~~~~~ */
 
@@ -56,9 +68,9 @@ hr {
   position: fixed;
   background: white;
   width: 90%;
-  max-width:   calc(992px - 10%);
+  max-width: calc(992px - 10%);
   bottom: 0;
-  height: 60px;
+  height: 90px;
 }
 
 .form-input {
@@ -85,37 +97,96 @@ hr {
   border-color: #2b2a29;
 }
 
+.copyright p {
+  font-size: 0.75em;
+  padding: 1em 0 0 2em;
+}
+
+.burgerbutton {
+  float: left;
+  margin-top: 0;
+}
 
 /* ~~~~~~~~~~Media Queries~~~~~~~~~~ */
 
-@media (min-width: 576px) {
-  .divider-header-top {
-    width: 70%;
+/* SMALL DOWNWARDS */
+
+@media (max-width: 575.9px) {
+
+  body {
+    margin-top: -30px;
   }
-  .header-title {
-    font-size: 1em;
-  }
-  .navbar a {
-    font-size: 0.76em;
+
+
+  .logo.img-responsive {
+    /* display: block; */
+    position: relative;
+    margin-top: 20px;
+    margin-right: calc(90%/2);
+    /* padding: 1em 0 0 0; */
+    max-width: 20%;
+    height: auto;
   }
 }
 
-@media (min-width: 720px) {
+
+/* SMALL UPWARDS */
+
+@media (min-width: 576px) {
+  .navbar.navbar-expand-sm {
+    padding: 0;
+  }
+
+  .smallonly {
+    display: none;
+  }
+
+  .navbar li:first-child {
+    padding-left: 0;
+  }
+
+  .navbar li {
+    padding-left: 40px;
+  }
+
+
+
+  .collapse.navbar-collapse {
+    background: #282828;
+  }
+
+}
+
+
+/* MEDIUM UPWARDS */
+
+@media (min-width: 768px) {
   .logo.img-responsive {
     max-width: 130px;
   }
   .navbar a {
       font-size: 1em;
     }
+  .main h2 {
+    font-size: 1.2em;
+  }
+
+
 }
 
-@media (min-width: 960px) {
+/* LARGE UPWARDS */
+
+@media (min-width: 992px) {
   body {
     margin: auto;
   }
   .footer {
     margin: auto;
   }
+  .main h2 {
+    font-size: 1.4em;
+  }
+}
 }
 
 /* ~~~~~~~~~~Fonts~~~~~~~~~~ */
