@@ -20,3 +20,8 @@
 //            $('body').css("margin-left",0);
 //        });
 //    });
+
+$("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
