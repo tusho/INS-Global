@@ -30,11 +30,16 @@ hr {
   text-align: center;
   font-size: 0.7em;
   line-height: 1;
-  margin-bottom: -3px;
 }
 
 
 /* ~~~~~~~~~~MOBILE NAVBAR~~~~~~~~~~ */
+
+.container-fluid.navbar-light {
+  position: absolute;
+  top: 10px;
+  z-index: 1000;
+}
 
 #wrapper {
   padding-left: 0;
@@ -56,7 +61,7 @@ hr {
   height: 100%;
   margin-left: -250px;
   overflow-y: auto;
-  background: white;
+  background: #000;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -71,12 +76,59 @@ hr {
   width: 100%;
   position: absolute;
   padding: 15px;
-  z-index: 1000;
 }
 
 #wrapper.toggled #page-content-wrapper {
   position: absolute;
   margin-right: -250px;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+  color: #fff;
+  background: none;
 }
 
 /* ~~~~~~~~~~SCREEN SIZE NAVBAR~~~~~~~~~~ */
@@ -187,12 +239,9 @@ hr {
 @media (max-width: 575.9px) {
 
   .logo.img-responsive {
-    /* display: block; */
     position: relative;
     margin-top: 20px;
     margin-right: clear: both;c(90%/2);
-    /* padding: 1em 0 0 0; */
-    /* max-width: 20%; */
     height: auto;
   }
 
@@ -242,32 +291,6 @@ hr {
     color: #fff;
     background: none;
   }
-
-  /* .navbar-collapse {
-          position: absolute;
-          top: 54px;
-          left: 0;
-          padding-left: 15px;
-          padding-right: 15px;
-          padding-bottom: 15px;
-          width: 100%;
-      }
-
-      .navbar-collapse.collapsing {
-          height: auto;
-          -webkit-transition: left 0.3s ease;
-          -o-transition: left 0.3s ease;
-          -moz-transition: left 0.3s ease;
-          transition: left 0.3s ease;
-          left: -100%;
-      }
-      .navbar-collapse.show {
-          left: 0;
-          -webkit-transition: left 0.3s ease-in;
-          -o-transition: left 0.3s ease-in;
-          -moz-transition: left 0.3s ease-in;
-          transition: left 0.3s ease-in;
-      } */
 }
 
 
@@ -298,9 +321,9 @@ hr {
     margin-bottom: calc(0.58 * (-3px));
   } */
   /* NEW */
-  .logo.img-responsive {
+  /* .logo.img-responsive {
     max-width: calc(0.77 * 120px);
-  }
+  } */
 
   .navbar li {
     padding-left: calc(0.774 * 73px);
@@ -313,18 +336,42 @@ hr {
     line-height: 0.774;
     margin-bottom: calc(0.774 * (-3px));
   }
+  .header-bottom {
+      margin-bottom: calc(0.774 * (-3px));
+  }
 }
 
 
 /* MEDIUM UPWARDS  768px*/
 
 @media (min-width: 768px) {
-  body {
-    margin: auto;
-  }
   .logo.img-responsive {
     max-width: 120px;
   }
+
+  /* SIDEBAR */
+  #wrapper {
+  padding-left: 0;
+  }
+  #wrapper.toggled {
+    padding-left: 250px;
+  }
+  #sidebar-wrapper {
+    width: 0;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+  /* SIDEBAR */
+
   .navbar a {
       font-size: 1em;
     }
@@ -338,6 +385,10 @@ hr {
   .navbar li {
     padding-left: 73px;
   }
+  .header-bottom {
+      margin-bottom: -3px;
+  }
+
 }
 
 /* LARGE UPWARDS 992px*/
