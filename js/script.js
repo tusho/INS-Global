@@ -29,7 +29,7 @@ $("#menu-toggle").click(function(e) {
 var open = false;
         $('#footerSlideButton').click(function () {
             if(open === false) {
-                $('.navbar-fixed-bottom').animate({ height: '300px' });
+                $('.navbar-fixed-bottom').animate({ height: '235px' });
                 $(this).css('backgroundPosition', 'bottom left');
                 open = true;
             } else {

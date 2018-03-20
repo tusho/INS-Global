@@ -217,13 +217,17 @@ hr {
   color: white;
 }
 
+#footerSlideContent {
+  padding-top: 20px;
+}
+
 /* ~~~~~~~~~~SCREEN FOOTER~~~~~~~~~~ */
 
 .form-input {
   width: 100%;
   background: #282828;
   border-style: solid;
-  /* padding-left: 0.5em; */
+  color: white;
 }
 
 .form-input::-webkit-input-placeholder {
@@ -256,7 +260,7 @@ hr {
 
 @media (max-width: 575.9px) {
   body {
-    margin-bottom: 200px;
+    margin-bottom: 1200px;
   }
 
   .logo.img-responsive {
@@ -291,6 +295,17 @@ hr {
   .footer {
     max-width: 515px;
     margin: auto;
+  }
+
+  .copyright p {
+    font-size: 0.6em;
+    margin-top: 20px;
+  }
+
+  .about-image-mobile {
+    padding: 0;
+    margin-top: -15px;
+    margin-bottom: 10px;
   }
 
   /* SIDEBAR */
@@ -390,6 +405,10 @@ hr {
   .submit-button {
     width: calc(0.774 * 100px);
   }
+  .about-image {
+    background-image: url(../img/lotte-meijer-md.jpg);
+    min-height: 100%;
+  }
 
   .navbar.navbar-expand-sm {
     padding: 0;
@@ -455,6 +474,10 @@ hr {
   }
   .submit-button {
     width: 100px;
+  }
+  .about-image {
+    background-image: url(../img/lotte-meijer-lg.jpg);
+    min-height: 100%;
   }
   /* SIDEBAR */
   #wrapper {
