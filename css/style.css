@@ -188,7 +188,36 @@ hr {
 }
 
 
-/* ~~~~~~~~~~FOOTER~~~~~~~~~~ */
+/* ~~~~~~~~~~MOBILE FOOTER~~~~~~~~~~ */
+
+.navbar-fixed-bottom {
+  	position: fixed;
+    bottom: -20px;
+	  height: 0px;
+	  width: 112%;
+    background-color:#ffffff;
+    padding: 10px 0;
+}
+
+#footerSlideButton {
+	background: #2b2a29;
+	position: absolute;
+	top: -50px;
+	/* right: 47%; */
+	width:112%;
+	height:50px;
+	border: none;
+	cursor: pointer;
+}
+
+#footerSlideButton p {
+  position: relative;
+  margin-top: 15px;
+  margin-left: 35%;
+  color: white;
+}
+
+/* ~~~~~~~~~~SCREEN FOOTER~~~~~~~~~~ */
 
 .form-input {
   width: 100%;
@@ -220,11 +249,16 @@ hr {
 
 
 
-/* ~~~~~~~~~~Media Queries~~~~~~~~~~ */
+
+/* ~~~~~~~~~~Responsive Media Queries~~~~~~~~~~ */
 
 /* SMALL DOWNWARDS */
 
 @media (max-width: 575.9px) {
+  body {
+    margin-bottom: 200px;
+  }
+
   .logo.img-responsive {
     position: relative;
     margin-top: 20px;
@@ -422,7 +456,6 @@ hr {
   .submit-button {
     width: 100px;
   }
-
   /* SIDEBAR */
   #wrapper {
   padding-left: 0;
