@@ -18,6 +18,10 @@ p {
 
 hr {
   border-top: 1px solid #231f20;
+  /* background-color: #eee;
+  border: 0 none;
+  color: #eee;
+  height: 1px; */
 }
 
 .main h1 {
@@ -177,7 +181,7 @@ hr {
 }
 
 .main h1 {
-  font-family: 'Avenir-Roman', 'sans-serif';
+  font-family: 'Oswald', 'sans-serif';
   margin-bottom: 0px;
 }
 
@@ -260,7 +264,7 @@ hr {
 
 @media (max-width: 575.9px) {
   body {
-    margin-bottom: 1200px;
+    margin-bottom: 1220px;
   }
 
   .logo.img-responsive {
@@ -471,6 +475,9 @@ hr {
   }
   .footer {
     margin-top: 26px;
+  }
+  .copyright {
+    margin-top: 48px;
   }
   .submit-button {
     width: 100px;
