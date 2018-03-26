@@ -127,7 +127,7 @@ hr {
 
 .sidebar-nav li a:hover {
   text-decoration: none;
-  color: grey;
+  color: #cccccc;
   /* background: rgba(255, 255, 255, 0.2); */
 }
 
@@ -159,7 +159,7 @@ hr {
 }
 
 .navbar a:hover {
-  color: #505050;
+  color: #cccccc;
 }
 
 .navbar li:first-child {
@@ -232,7 +232,7 @@ hr {
 
 /* ~~~~~~~~~~SCREEN FOOTER~~~~~~~~~~ */
 
-.form-input {
+.form-input-index {
   width: 100%;
   background: #282828;
   border-style: solid;
@@ -250,17 +250,37 @@ hr {
   color: white;
 }
 
-.submit-button {
+.submit-button-index {
   float: right;
   color: white;
   background-color: #2b2a29;
   border-color: #2b2a29;
+  cursor: pointer;
 }
 
 
 
+/* DISTRIBUTION PAGE */
 
 
+input#mce-FNAME.form-input.form-input-distribution, input#mce-MOBILE.form-input.form-input-distribution, input#mce-EMAIL.form-input.form-input-distribution, input#mce-MESSAGE.form-input.form-input-distribution {
+  width: 100%;
+  border: none;
+  background: #2b2a29;
+}
+
+input#mce-MESSAGE.form-input.form-input-distribution {
+  height: 100px;
+}
+
+.submit-button-distribution {
+  position: absolute;
+  float: right;
+  color: white;
+  background-color: #2b2a29;
+  border-color: #2b2a29;
+  cursor: pointer;
+}
 
 
 
@@ -373,7 +393,11 @@ hr {
     width: calc(0.774 * 100px);
   }
   .about-image {
-    background-image: url(../img/lotte-meijer-md.jpg);
+    background: url(../img/lotte-meijer-md.jpg) no-repeat center;
+    min-height: 100%;
+  }
+  .distribution-image {
+    background: url(../img/zulmaury-saavedra-cropped.jpg) no-repeat center;
     min-height: 100%;
   }
 
