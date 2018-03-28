@@ -336,15 +336,44 @@ input#mce-MESSAGE.form-input.form-input-distribution {
 }
 
 .submit-button-distribution {
-  position: absolute;
   float: right;
+  height: 30px;
   color: white;
+  border: none;
   background-color: #2b2a29;
-  border-color: #2b2a29;
   cursor: pointer;
+  font-family: 'avenir-roman', 'sans-serif';
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 2px;
 }
 
+.form-control {
+  border: none;
+  border-radius: 0;
+  background: #2b2a29;
+  font-family: 'avenir-roman', 'sans-serif';
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
 
+.form-control::-webkit-input-placeholder {
+  font-family: 'avenir-roman' 'sans-serif';
+  color: white;
+  font-size: 0.8em;
+}
+
+.form-control:-ms-input-placeholder {
+  font-family: 'avenir-roman', 'sans-serif';
+  color: white;
+  font-size: 0.8em;
+}
+
+input .input-data-error {
+  color: red;
+}
 
 /* ~~~~~~~~~~Responsive Media Queries~~~~~~~~~~ */
 
