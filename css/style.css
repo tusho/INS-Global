@@ -227,6 +227,10 @@ h1 {
   margin-bottom: 10px;
 }
 
+.linerow {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 /* ~~~~~~~~~~MOBILE FOOTER~~~~~~~~~~ */
 
@@ -348,26 +352,27 @@ input#mce-MESSAGE.form-input.form-input-distribution {
 
 @media (max-width: 575.9px) {
   .index-body {
-    margin-bottom: 1320px;
+    margin-bottom: 1340px;
   }
 
   .about-body {
-    margin-bottom: 1100px;
+    margin-bottom: 1120px;
   }
 
   .logo.img-responsive {
     position: relative;
-    margin-top: 20px;
+    margin-top: 34px;
     margin-right: clear: both;c(90%/2);
     height: 180px;
   }
 
-  /* .header.container-fluid {
-    max-width: 515px;
-  } */
-
+  .divider-header-top, .divider-header-middle {
+    width: 92%;
+    max-width: 514px;
+  }
   .hero-header {
     max-width: calc(467px);
+    width: 94%;
     margin: auto;
   }
 
@@ -375,10 +380,8 @@ input#mce-MESSAGE.form-input.form-input-distribution {
     max-width: calc(370px + 30px);
     margin: auto;
   }
-
-
   .main h1 {
-    margin-top: 12px;
+    margin-top: 28px;
     margin-bottom: 45px;
   }
 
@@ -399,10 +402,12 @@ input#mce-MESSAGE.form-input.form-input-distribution {
     font-size: 0.6em;
     margin-top: 20px;
   }
-
+  .about {
+    width: 94%;
+  }
   .about-image-mobile {
     padding: 0;
-    margin-top: -15px;
+    margin-top: 22px;
     margin-bottom: 10px;
   }
 
@@ -476,7 +481,7 @@ input#mce-MESSAGE.form-input.form-input-distribution {
   }
   p {
     font-size: 0.65em;
-    margin-bottom: 1em;
+    margin-bottom: 0;
   }
   .footer {
     margin-top: calc(0.774 * 26px);
