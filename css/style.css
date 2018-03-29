@@ -337,13 +337,13 @@ input#mce-MESSAGE.form-input.form-input-distribution {
 
 .submit-button-distribution {
   float: right;
-  height: 30px;
   color: white;
   border: none;
   background-color: #2b2a29;
   cursor: pointer;
   font-family: 'avenir-roman', 'sans-serif';
   text-transform: uppercase;
+  height: 30px;
   font-size: 0.8em;
   padding-right: 15px;
   padding-left: 15px;
@@ -375,17 +375,35 @@ input .input-data-error {
   color: red;
 }
 
+/* BRAND PROMO PAGE */
+.brand-promo h1 {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.distribution h1, .brand-promo h1 {
+  margin-top: 14px;
+  margin-bottom: 16px;
+}
+.distribution p, .brand-promo p {
+  margin-bottom: 18px;
+}
+
 /* ~~~~~~~~~~Responsive Media Queries~~~~~~~~~~ */
 
 /* SMALL DOWNWARDS */
 
 @media (max-width: 575.9px) {
   .index-body {
-    margin-bottom: 1340px;
+    margin-bottom: 1380px;
   }
 
   .about-body {
-    margin-bottom: 1120px;
+    margin-bottom: 1180px;
+  }
+
+  .distribution-brand-promo-body {
+    margin-bottom: 1250px;
   }
 
   .logo.img-responsive {
@@ -550,8 +568,21 @@ input .input-data-error {
     min-height: 100%;
   }
   .distribution-image {
-    background: url(../img/zulmaury-saavedra-cropped2.jpg) no-repeat center;
+    background: url(../img/zulmaury-saavedra-cropped.jpg) no-repeat center;
     min-height: 100%;
+  }
+  .distribution .contact-form-container {
+    padding-left: 23px;
+  }
+  .distribution p {
+    margin-bottom: calc(0.774 * 23px);
+  }
+  .submit-button-distribution {
+    height: 23px;
+    font-size: 0.6em;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
   }
   /* .navbar.navbar-expand-sm {
     padding: 0;
@@ -559,11 +590,24 @@ input .input-data-error {
   .collapse.navbar-collapse {
     background: #282828;
   } */
-  .header-title {
+  .brand-promo h1 {
+    margin-bottom: calc(0.774 * 14px);
+  }
+  .brand-promo-image {
+    background: url(../img/christopher-burns-471173-unsplash.jpg) no-repeat center;
+    min-height: 100%;
+  }
+  .brand-promo .contact-form-container {
+    padding-right: 23px;
+  }
+  .brand-promo p {
+    margin-bottom: calc(0.774 * 23px);
+  }
+  /* .brand-promo {
     font-size: calc(0.774 * 0.7em);
     line-height: 0.774;
     margin-bottom: calc(0.774 * (-3px));
-  }
+  } */
 
 
 }
@@ -654,9 +698,31 @@ input .input-data-error {
   .distribution h1 {
     margin-bottom: 14px;
   }
+  .distribution p {
+    margin-bottom: 23px;
+  }
+  .distribution .contact-form-container {
+    padding-left: 35px;
+  }
+  .submit-button-distribution {
+    height: 30px;
+    font-size: 0.8em;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 2px;
+  }
   .about-image {
     background-image: url(../img/lotte-meijer-lg.jpg);
     min-height: 100%;
+  }
+  .brand-promo h1 {
+    margin-bottom: 14px;
+  }
+  .brand-promo p {
+    margin-bottom: 23px;
+  }
+  .brand-promo .contact-form-container {
+    padding-right: 35px;
   }
   /* SIDEBAR */
   #wrapper {
