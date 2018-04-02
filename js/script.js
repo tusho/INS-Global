@@ -62,7 +62,7 @@ $(function () {
                 data: $(this).serialize(),
                 success: function (data)
                 {
-                    // data = JSON object that contact.php returns
+                    // data = JSON object that contact-distributor.php returns
 
                     // we recieve the type of the message: success x danger and apply it to the
                     var messageAlert = 'alert-' + data.type;
@@ -85,6 +85,7 @@ $(function () {
         }
     })
 });
+
 
 $('#form_name').focus(function(){
 $(this).css('backgroundColor','#2b2a29');
