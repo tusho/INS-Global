@@ -273,7 +273,7 @@ h1 {
 .form-input-index {
   width: 100%;
   background: #282828;
-  border-style: solid;
+  border-style: none;
   color: white;
   font-family: 'avenir-roman', 'sans-serif';
   font-size: 0.8em;
@@ -283,13 +283,13 @@ h1 {
   padding-left: 10px;
 }
 
-.form-input::-webkit-input-placeholder {
+.form-input-index::-webkit-input-placeholder {
   font-family: 'avenir-roman' 'sans-serif';
   color: white;
   font-size: 0.9em;
 }
 
-.form-input:-ms-input-placeholder {
+.form-input-index::-ms-input-placeholder {
   font-family: 'avenir-roman', 'sans-serif';
   color: white;
   font-size: 0.9em;
