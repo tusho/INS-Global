@@ -277,22 +277,35 @@ h1 {
   color: white;
   font-family: 'avenir-roman', 'sans-serif';
   font-size: 0.8em;
-  height: 32px;
+  height: 40px;
   padding-top: 7px;
   padding-bottom: 5px;
   padding-left: 10px;
 }
 
-.form-input-index::-webkit-input-placeholder {
-  font-family: 'avenir-roman' 'sans-serif';
+.form-input-index:placeholder-shown {
   color: white;
-  font-size: 0.9em;
+  opacity: 1;
 }
 
-.form-input-index::-ms-input-placeholder {
-  font-family: 'avenir-roman', 'sans-serif';
+.form-input::-webkit-input-placeholder {
   color: white;
-  font-size: 0.9em;
+  opacity: 1;
+}
+
+.form-input:-moz-placeholder { /* Firefox 18- */
+  color: white;
+  opacity: 1;
+}
+
+.form-input::-moz-placeholder {  /* Firefox 19+ */
+  color: white;
+  opacity: 1;
+}
+
+.form-input::-ms-input-placeholder {
+  color: white;
+  opacity: 1;
 }
 
 .submit-button-index {
@@ -303,6 +316,8 @@ h1 {
   cursor: pointer;
   font-family: 'avenir-roman', 'sans-serif';
   text-transform: uppercase;
+  height: 40px;
+  width: 100px;
   font-size: 0.9em;
   padding-top: 5px;
   padding-bottom: 2px;
@@ -382,13 +397,42 @@ input .input-data-error {
   margin-top: 0px;
 }
 
+/* Form both on Distribution and Brand Promo */
+
 .distribution h1, .brand-promo h1 {
   /* margin-top: 14px; */
   margin-bottom: 16px;
 }
+
 .distribution p, .brand-promo p {
   margin-bottom: 18px;
 }
+
+.submit-button-distribution {
+  width: 100px;
+}
+
+.help-block.with-errors li {
+  font-family: 'avenir-roman', 'sans-serif';
+  font-size: 0.8em !important;
+  color: red;
+  padding-top: 3px;
+  padding-left: 12px;
+  font-size: 14px;
+}
+
+.help-block.with-errors .list-unstyled {
+  margin-bottom: 0;
+}
+
+.text-muted {
+  font-family: 'avenir-roman', 'sans-serif';
+  font-size: 0.8em !important;
+  color: #2b2a29 !important;
+}
+
+
+
 
 /* ~~~~~~~~~~Responsive Media Queries~~~~~~~~~~ */
 
@@ -461,6 +505,10 @@ input .input-data-error {
 
   hr {
     max-width: 500px;
+  }
+  .brand-promo.container-fluid, .distribution.container-fluid {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
 }
@@ -536,22 +584,25 @@ input .input-data-error {
   }
   .form-input-index {
     font-size: 0.6em;
-    height: calc(0.774 * 32px);
+    height: 24px;
     padding-top: 7px;
     padding-bottom: 4px;
     padding-left: 8px;
   }
   .submit-button-index {
     width: calc(0.774 * 100px);
-    height: 21px;
+    height: 24px;
     font-size: 0.6em;
-    padding-top: 4px;
+    padding-top: 5px;
     padding-bottom: 2px;
-    margin-top: 4px;
+    margin-top: 2px;
   }
   .copyright {
     padding-left: 0;
+    margin-top: calc(0.774 * 58px);
+    margin-bottom: 80px;
   }
+
   .about h1 {
     margin-top: calc(0.774 * 21px);
     margin-bottom: calc(0.774 * 14px);
@@ -572,6 +623,7 @@ input .input-data-error {
     background: url(../img/zulmaury-saavedra-cropped.jpg) no-repeat center;
     min-height: 100%;
     margin-top: 5px;
+    padding-right: 0;
   }
   .distribution .contact-form-container {
     padding-left: 23px;
@@ -579,12 +631,26 @@ input .input-data-error {
   .distribution p {
     margin-bottom: calc(0.774 * 23px);
   }
-  .submit-button-distribution {
+  /* .submit-button-distribution {
     height: 23px;
     font-size: 0.6em;
+    width: calc(0.774 * 100px);
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 5px;
+  } */
+  .submit-button-distribution {
+    height: 30px;
+    font-size: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+  }
+  .form-divider {
+    width: 90%;
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 0;
   }
   /* .navbar.navbar-expand-sm {
     padding: 0;
@@ -681,22 +747,20 @@ input .input-data-error {
     margin-top: 26px;
   }
   .form-input-index {
-    font-size: 0.8em;
-    height: 32px;
+    /* font-size: 0.8em; */
+    height: 26px;
     padding-top: 8px;
     padding-bottom: 5px;
     padding-left: 10px;
   }
   .submit-button-index {
-    height: 28px;
+    height: 26px;
     width: 100px;
-    font-size: 0.7em;
-    padding-top: 8px;
-    padding-bottom: 4px;
-    margin-top: 2px;
+    margin-top: 1px;
+    padding-top: 6px;
   }
   .copyright {
-    margin-top: 20px;
+    margin-top: 58px;
   }
   .about h1 {
     margin-top: 21px;
@@ -713,12 +777,13 @@ input .input-data-error {
   }
   .submit-button-distribution {
     height: 30px;
-    font-size: 0.7em;
+    width: 100px;
+    font-size: 10px;
     padding-right: 15px;
     padding-left: 15px;
-    padding-top: 4px;
-    /* margin-top: 18px; */
+    padding-top: 5px;
   }
+
   .about-image {
     background-image: url(../img/lotte-meijer-lg.jpg);
     min-height: 100%;

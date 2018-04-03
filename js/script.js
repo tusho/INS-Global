@@ -20,24 +20,33 @@
 //            $('body').css("margin-left",0);
 //        });
 //    });
+var open = false;
+
+$("#index-container").click(function() {
+  if(open === true) {
+    $('.navbar-fixed-bottom').animate({ height: '0px' });
+    $(this).css('backgroundPosition', 'top left');
+    open = false;
+  }
+})
 
 $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
 
-var open = false;
-        $('#footerSlideButton').click(function () {
-            if(open === false) {
-                $('.navbar-fixed-bottom').animate({ height: '235px' });
-                $(this).css('backgroundPosition', 'bottom left');
-                open = true;
-            } else {
-                $('.navbar-fixed-bottom').animate({ height: '0px' });
-                $(this).css('backgroundPosition', 'top left');
-                open = false;
-            }
-        });
+
+$('#footerSlideButton').click(function () {
+    if(open === false) {
+        $('.navbar-fixed-bottom').animate({ height: '255px' });
+        $(this).css('backgroundPosition', 'bottom left');
+        open = true;
+    } else {
+        $('.navbar-fixed-bottom').animate({ height: '0px' });
+        $(this).css('backgroundPosition', 'top left');
+        open = false;
+    }
+});
 
 $(function () {
 
