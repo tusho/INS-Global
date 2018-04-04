@@ -207,6 +207,15 @@ h2 {
   background: #282828;;
 }
 
+.big-box-content a {
+  text-decoration: none;
+}
+
+.big-box-content h2:hover {
+  text-decoration: none;
+  color: white;
+}
+
 .main h2 {
   font-family: 'Oswald', 'sans-serif';
   color: #f1afc9;
@@ -385,6 +394,12 @@ input#mce-MESSAGE.form-input.form-input-distribution {
   color: white;
   font-size: 0.8em;
 }
+
+.form-control::-moz-placeholder {
+  font-family: 'avenir-roman', 'sans-serif';
+  color: white;
+  font-size: 0.8em;
+  }
 
 input .input-data-error {
   color: red;
@@ -604,7 +619,7 @@ input .input-data-error {
   }
 
   .about h1 {
-    margin-top: calc(0.774 * 21px);
+    margin-top: 0;
     margin-bottom: calc(0.774 * 14px);
   }
   .distribution h1 {
@@ -619,6 +634,10 @@ input .input-data-error {
     background: url(../img/lotte-meijer-md.jpg) no-repeat center;
     min-height: 100%;
   }
+  .about-image-container {
+    padding-top: calc(0.774 * 6px);
+  }
+
   .distribution-image {
     background: url(../img/zulmaury-saavedra-cropped.jpg) no-repeat center;
     min-height: 100%;
@@ -730,6 +749,7 @@ input .input-data-error {
     padding-bottom: 37px;
     margin-bottom: 12px;
   }
+
   .hero-header {
     margin-top: 38px;
     margin-bottom: 38px;
@@ -763,8 +783,11 @@ input .input-data-error {
     margin-top: 58px;
   }
   .about h1 {
-    margin-top: 21px;
+    margin-top: 0;
     margin-bottom: 14px;
+  }
+  .about-image-container {
+    padding-top: 6px;
   }
   .distribution h1 {
     margin-bottom: 14px;
