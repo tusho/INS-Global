@@ -190,33 +190,33 @@ $(function () {
     })
 });
 
-$('#form_name').focus(function(){
-$(this).css('backgroundColor','#2b2a29');
-$(this).css('color', 'white');
-$(this).css('fontSize', '0.8em');
-$(this).css('textTransform', 'none');
-});
-
-$('#form_email').focus(function(){
-$(this).css('backgroundColor','#2b2a29');
-$(this).css('color', 'white');
-$(this).css('fontSize', '0.8em');
-$(this).css('textTransform', 'none');
-});
-
-$('#form_phone').focus(function(){
-$(this).css('backgroundColor','#2b2a29');
-$(this).css('color', 'white');
-$(this).css('fontSize', '0.8em');
-$(this).css('textTransform', 'none');
-});
-
-$('#form_message').focus(function(){
-$(this).css('backgroundColor','#2b2a29');
-$(this).css('color', 'white');
-$(this).css('fontSize', '0.8em');
-$(this).css('textTransform', 'none');
-});
+// $('#form_name').focus(function(){
+// $(this).css('backgroundColor','#2b2a29');
+// $(this).css('color', 'white');
+// $(this).css('fontSize', '0.8em');
+// $(this).css('textTransform', 'none');
+// });
+//
+// $('#form_email').focus(function(){
+// $(this).css('backgroundColor','#2b2a29');
+// $(this).css('color', 'white');
+// $(this).css('fontSize', '0.8em');
+// $(this).css('textTransform', 'none');
+// });
+//
+// $('#form_phone').focus(function(){
+// $(this).css('backgroundColor','#2b2a29');
+// $(this).css('color', 'white');
+// $(this).css('fontSize', '0.8em');
+// $(this).css('textTransform', 'none');
+// });
+//
+// $('#form_message').focus(function(){
+// $(this).css('backgroundColor','#2b2a29');
+// $(this).css('color', 'white');
+// $(this).css('fontSize', '0.8em');
+// $(this).css('textTransform', 'none');
+// });
 
 // $('#myInput').blur(function(){
 // if($(this).val().length > 0) {

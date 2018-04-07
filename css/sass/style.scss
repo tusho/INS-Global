@@ -1,4 +1,4 @@
-@include mixins;
+@import "mixins";
 
 body {
   margin: auto;
@@ -299,24 +299,17 @@ h1 {
   opacity: 1;
 }
 
-.form-input::-webkit-input-placeholder {
-  color: white;
-  opacity: 0.7;
+.form-input {
+  @include placeholder{
+    color:#fff;
+    opacity: 1;
+  }
 }
 
-.form-input:-moz-placeholder { /* Firefox 18- */
-  color: white;
-  opacity: 1;
-}
-
-.form-input::-moz-placeholder {  /* Firefox 19+ */
-  color: white;
-  opacity: 1;
-}
-
-.form-input::-ms-input-placeholder {
-  color: white;
-  opacity: 1;
+.form-input:focus {
+  @include placeholder{
+    opacity: 0.7;
+  }
 }
 
 .submit-button-index {
@@ -471,7 +464,8 @@ input .input-data-error {
   .logo.img-responsive {
     position: relative;
     margin-top: 34px;
-    margin-right: clear: both;c(90%/2);
+    clear: both;
+    margin-right: calc(90%/2);
     height: 180px;
   }
 
