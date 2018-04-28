@@ -7,11 +7,12 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/sass/style.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <title>INS Global</title>
   </head>
 
 
-  <body class="about-body">
+  <body class="gallery-body">
 
   <!-- ~~~~MAIN WRAPPER OPEN~~~~ -->
     <div id="wrapper">
@@ -25,6 +26,9 @@
                     </li>
                     <li class="nav-item">
                         <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a href="distribution.html" class="nav-link">Distribution</a>
@@ -62,18 +66,21 @@
           <div class="container-fluid navcontainer d-none d-sm-block">
             <div class="container-fluid navinner">
               <div class="row navrow">
-                        <div class="col-sm-3 navcol">
-                            <a href="index.html" class="nav-link">Home</a>
-                        </div>
-                        <div class="col-sm-3 navcol">
-                            <a href="about.html" class="nav-link">About Us</a>
-                        </div>
-                        <div class="col-sm-3 navcol">
-                            <a href="distribution.html" class="nav-link">Distribution</a>
-                        </div>
-                        <div class="col-sm-3 navcol">
-                            <a href="brand-promo.html" class="nav-link">Brand Promo</a>
-                        </div>
+                  <div class="col navcol">
+                      <a href="index.html" class="nav-link">Home</a>
+                  </div>
+                  <div class="col navcol">
+                      <a href="about.html" class="nav-link">About Us</a>
+                  </div>
+                  <div class="col navcol">
+                      <a href="gallery.html" class="nav-link">Gallery</a>
+                  </div>
+                  <div class="col navcol">
+                      <a href="distribution.html" class="nav-link">Distribution</a>
+                  </div>
+                  <div class="col navcol">
+                      <a href="brand-promo.html" class="nav-link">Brand Promo</a>
+                  </div>
                 </div>
             </div>
             <hr class="divider-header-bottom d-none d-sm-block">
@@ -81,24 +88,51 @@
 
         <!-- ~~~~MAIN CONTENT SECTION~~~~ -->
         <div id="index-container" class="container-fluid p-0">
-          <div class="about-image-mobile container-fluid d-sm-none">
-            <img class="img-fluid" src="img/lotte-meijer-sm.jpg">
-          </div>
-          <div class="about container-fluid">
-            <div class="row row-eq-height">
-              <div class="col-sm-6">
-                <h1>WE LOVE NATURAL BEAUTY...</h1>
-                <p>Beauty isn’t just about a face.<br>It’s about your mind. Your heart. And your soul.</p>
-                <p>We are great believers in embracing our natural beauty, and accentuating the gifts that we already bare. By giving skin and body the food it needs, we act as the catalysts to our own self-evolution. And with a healthy body, mind, heart and soul – we are beautiful.</p>
-                <p>We have been distributing since 2006, starting with the original Lucas Papaw Ointment manufactured in Australia. Since then we have expanded to produce our own natural skin products, as well as continue to grow a portfolio of products that we advocate and distribute internationally. Our ambition is to work with other brands with similar philosophies so that we may grow together.</p>
-                <hr class="about-hr d-none d-sm-block">
+
+          <div class="container-fluid">
+            <div class="hero-header row justify-content-center align-items-center">
+              <h1>OUR POINT OF DIFFERENCE - WE SUPPORT WITH THE TOOLS YOU NEED FOR DISTRIBUTION.</h1>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <a class="gallery-image" id="lightbox-img" href="img/complete-rd.png" data-lightbox="example-set" data-title="Image 1"><img class="gallery-image" src="img/900-644-rd.png" alt="Image 1" title="Image 1.1"></a>
+                <p class="image-description">Image 1</p>
               </div>
-              <div class="col-sm-6 d-none d-sm-block about-image-container">
-                <div class="container about-image">
-                </div>
+              <div class="col-sm-6 col-md-4">
+                <a class="gallery-image" id="lightbox-img" href="img/complete-rd-light.png" data-lightbox="example-set" data-title="Image 2"><img class="gallery-image" src="img/900-644-rd-light.png" alt="Image 2" title="Image 2.1"></a>
+                <p class="image-description">Image 1</p>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <a class="gallery-image" id="lightbox-img" href="img/complete-rd.png" data-lightbox="example-set" data-title="Image 1"><img class="gallery-image" src="img/900-644-rd.png" alt="Image 1" title="Image 1.1"></a>
+                <p class="image-description">Image 1</p>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <a class="gallery-image" id="lightbox-img" href="img/complete-rd.png" data-lightbox="example-set" data-title="Image 1"><img class="gallery-image" src="img/900-644-rd.png" alt="Image 1" title="Image 1.1"></a>
+                <p class="image-description">Image 1</p>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <a class="gallery-image" id="lightbox-img" href="img/complete-rd-light.png" data-lightbox="example-set" data-title="Image 2"><img class="gallery-image" src="img/900-644-rd-light.png" alt="Image 2" title="Image 2.1"></a>
+                <p class="image-description">Image 1</p>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <a class="gallery-image" id="lightbox-img" href="img/complete-rd.png" data-lightbox="example-set" data-title="Image 1"><img class="gallery-image" src="img/900-644-rd.png" alt="Image 1" title="Image 1.1"></a>
+                <p class="image-description">Image 1</p>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <a class="gallery-image" id="lightbox-img" href="img/complete-rd.png" data-lightbox="example-set" data-title="Image 1"><img class="gallery-image" src="img/900-644-rd.png" alt="Image 1" title="Image 1.1"></a>
+                <p class="image-description">Image 1</p>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <a class="gallery-image" id="lightbox-img" href="img/complete-rd-light.png" data-lightbox="example-set" data-title="Image 2"><img class="gallery-image" src="img/900-644-rd-light.png" alt="Image 2" title="Image 2.1"></a>
+                <p class="image-description">Image 1</p>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <a class="gallery-image" id="lightbox-img" href="img/complete-rd.png" data-lightbox="example-set" data-title="Image 1"><img class="gallery-image" src="img/900-644-rd.png" alt="Image 1" title="Image 1.1"></a>
+                <p class="image-description">Image 1</p>
               </div>
             </div>
           </div>
+
         </div>
 
 
@@ -163,10 +197,13 @@
 
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="bower_components/bootstrap-validator/dist/validator.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
   </body>
 </html>
