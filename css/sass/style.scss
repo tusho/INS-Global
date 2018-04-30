@@ -206,7 +206,9 @@ h2 {
 /* ~~~~~~~~~~MAIN CONTENT~~~~~~~~~~ */
 
 .big-box-content {
-  background: #282828;;
+  // background: #282828;
+  background-image: url(../../img/gridbg.jpg);
+  background-size: 100% 100%;
 }
 
 .big-box-content a {
@@ -216,11 +218,12 @@ h2 {
 .big-box-content h2:hover {
   text-decoration: none;
   color: #cccccc;
+  // color: #f1afc9;
 }
 
 .main h2 {
   font-family: 'Oswald', 'sans-serif';
-  color: #f1afc9;
+  color: #36bda2;
 }
 
 .main p {
