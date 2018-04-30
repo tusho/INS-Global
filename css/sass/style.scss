@@ -419,7 +419,7 @@ input#mce-MESSAGE.form-input.form-input-distribution {
 .form-control {
   border: none;
   border-radius: 0;
-  background: #2b2a29;
+  background: #2b2a29 !important;
   font-family: 'avenir-roman', 'sans-serif';
   text-transform: uppercase;
   font-size: 0.8em;
@@ -555,6 +555,9 @@ input .input-data-error {
   .about {
     width: 94%;
   }
+  .about-hr {
+    width: 75%;
+  }
   .about-image-mobile {
     padding: 0;
     margin-top: 22px;
@@ -677,7 +680,7 @@ input .input-data-error {
     margin-left: 0;
   }
   .about-image {
-    background: url(../../img/lotte-meijer-md.jpg) no-repeat center;
+    background: url(../../img/lotte-meijer-lgg.png) no-repeat center;
     min-height: 100%;
   }
 
@@ -686,7 +689,8 @@ input .input-data-error {
   }
 
   .distribution-image {
-    background: url(../../img/zulmaury-saavedra-cropped.jpg) no-repeat center;
+    // background: url(../../img/zulmaury-saavedra-cropped.jpg) no-repeat center;
+    background: #2b2a29;
     min-height: 100%;
     margin-top: 5px;
     padding-right: 0;
@@ -718,7 +722,8 @@ input .input-data-error {
     margin-top: 0px;
   }
   .brand-promo-image {
-    background: url(../../img/christopher-burns-471173-unsplash.jpg) no-repeat center;
+    // background: url(../../img/christopher-burns-471173-unsplash.jpg) no-repeat center;
+    background: #2b2a29;
     min-height: 100%;
     margin-top: 5px;
   }
@@ -815,6 +820,7 @@ input .input-data-error {
   }
   .about-image-container {
     padding-top: 6px;
+    margin-bottom: 15px;
   }
   .distribution h1 {
     margin-bottom: 14px;
@@ -835,7 +841,7 @@ input .input-data-error {
   }
 
   .about-image {
-    background-image: url(../../img/lotte-meijer-lg.jpg);
+    background-image: url(../../img/lotte-meijer-lgggg.png);
     min-height: 100%;
   }
   .form-group {
@@ -1118,7 +1124,7 @@ body.lb-disable-scrolling {
 
 
 
-// Custon CSS
+// Gallery CSS
 
 .gallery-image {
   max-width: 100%;
@@ -1127,5 +1133,5 @@ body.lb-disable-scrolling {
 .image-description {
   padding-top: 5px;
   padding-left: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 37px;
 }
