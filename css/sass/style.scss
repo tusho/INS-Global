@@ -230,6 +230,24 @@ h2 {
   padding: 0.5em 0 0 0.1em;;
 }
 
+.shop-btn {
+  display: block;
+  margin: auto;
+  color: white;
+  border: none;
+  background-color: #2b2a29;
+  cursor: pointer;
+  font-family: 'avenir-roman', 'sans-serif';
+  text-transform: uppercase;
+  height: 29px;
+  width: 82px;
+  font-size: 0.5em;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  margin-top: 26px;
+  margin-bottom: 24px
+}
+
 h1 {
   font-family: 'Oswald', 'sans-serif';
   margin-bottom: 0px;
@@ -331,6 +349,10 @@ h1 {
   margin-top: 2px;
 }
 
+.copyright.container-fluid a {
+  text-decoration: none;
+  color: #2b2a29;
+}
 
 /* ABOUT PAGE */
 
@@ -345,6 +367,28 @@ h1 {
 .distribution h1 {
   text-align: left;
   margin-bottom: 16px;
+}
+
+.about-hr {
+  display: inline-block;
+}
+
+.join-btn {
+  display: inline-block;
+  float: right;
+  color: white;
+  border: none;
+  background-color: #2b2a29;
+  cursor: pointer;
+  font-family: 'avenir-roman', 'sans-serif';
+  text-transform: uppercase;
+  height: 29px;
+  width: 82px;
+  font-size: 0.5em;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  // margin-top: 26px;
+  // margin-bottom: 24px
 }
 
 input#mce-FNAME.form-input.form-input-distribution, input#mce-MOBILE.form-input.form-input-distribution, input#mce-EMAIL.form-input.form-input-distribution, input#mce-MESSAGE.form-input.form-input-distribution {
@@ -453,7 +497,7 @@ input .input-data-error {
 
 @media (max-width: 575.9px) {
   .index-body {
-    margin-bottom: 1380px;
+    margin-bottom: 1620px;
   }
 
   .about-body {
@@ -523,6 +567,9 @@ input .input-data-error {
   .brand-promo.container-fluid, .distribution.container-fluid {
     padding-left: 32px;
     padding-right: 32px;
+  }
+  .copyright.container-fluid {
+    margin-top: 40px;
   }
 
 }
@@ -613,7 +660,7 @@ input .input-data-error {
   }
   .copyright {
     padding-left: 0;
-    margin-top: calc(0.774 * 58px);
+    margin-top: calc(0.774 * 44px);
     margin-bottom: 80px;
   }
 
@@ -650,14 +697,6 @@ input .input-data-error {
   .distribution p {
     margin-bottom: calc(0.774 * 23px);
   }
-  /* .submit-button-distribution {
-    height: 23px;
-    font-size: 0.6em;
-    width: calc(0.774 * 100px);
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 5px;
-  } */
   .submit-button-distribution {
     height: 30px;
     font-size: 10px;
@@ -671,12 +710,6 @@ input .input-data-error {
     margin-left: 0;
     margin-right: 0;
   }
-  /* .navbar.navbar-expand-sm {
-    padding: 0;
-  }
-  .collapse.navbar-collapse {
-    background: #282828;
-  } */
   .form-group {
     margin-bottom: calc(0.774 * 8px);
   }
@@ -695,12 +728,6 @@ input .input-data-error {
   .brand-promo p {
     margin-bottom: calc(0.774 * 23px);
   }
-  /* .brand-promo {
-    font-size: calc(0.774 * 0.7em);
-    line-height: 0.774;
-    margin-bottom: calc(0.774 * (-3px));
-  } */
-
 
 }
 
@@ -780,7 +807,7 @@ input .input-data-error {
     padding-top: 6px;
   }
   .copyright {
-    margin-top: 58px;
+    margin-top: 44px;
   }
   .about h1 {
     margin-top: 0;
