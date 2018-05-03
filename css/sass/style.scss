@@ -488,7 +488,10 @@ input .input-data-error {
   color: #2b2a29 !important;
 }
 
-
+.privacy-text span {
+  font-family: 'avenir-roman', 'sans-serif' !important;
+  font-size: 0.8rem !important;
+}
 
 
 /* ~~~~~~~~~~Responsive Media Queries~~~~~~~~~~ */
@@ -512,7 +515,7 @@ input .input-data-error {
     position: relative;
     margin-top: 34px;
     clear: both;
-    margin-right: calc(90%/2);
+    // margin-right: calc(90%/2);
     height: 180px;
   }
 
