@@ -22,6 +22,16 @@ p {
   height: auto;
 }
 
+.mobile-logo {
+  height: auto;
+  max-width: 140px;
+}
+
+.container-fluid .navinner {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 hr {
   border-top: 1px solid #231f20;
   background-color: #A9A9A9;
