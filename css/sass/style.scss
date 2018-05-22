@@ -736,8 +736,8 @@ input .input-data-error {
     margin-top: 0px;
   }
   .brand-promo-image {
-    // background: url(../../img/christopher-burns-471173-unsplash.jpg) no-repeat center;
-    background: #2b2a29;
+    background: url(../../img/Lucas_Papaw_Hero_Photoshoot.jpg) no-repeat center;
+    // background: #2b2a29;
     min-height: 100%;
     margin-top: 5px;
   }
@@ -923,7 +923,7 @@ input .input-data-error {
 /* ~~~~~~~~~~Lightbox Gallery~~~~~~~~~~ */
 
 body:after {
-  content: url(../../images/close.png) url(../../images/loading.gif) url(../../images/prev.png) url(../../images/next.png);
+  content: url(../../img/close.png) url(../../img/loading.gif) url(../../img/prev.png) url(../../img/next.png);
   display: none;
 }
 
@@ -1001,7 +1001,7 @@ body.lb-disable-scrolling {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../images/loading.gif) no-repeat;
+  background: url(../../img/loading.gif) no-repeat;
 }
 
 .lb-nav {
@@ -1032,7 +1032,7 @@ body.lb-disable-scrolling {
   width: 34%;
   left: 0;
   float: left;
-  background: url(../../images/prev.png) left 48% no-repeat;
+  background: url(../../img/prev.png) left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -1050,7 +1050,7 @@ body.lb-disable-scrolling {
   width: 64%;
   right: 0;
   float: right;
-  background: url(../../images/next.png) right 48% no-repeat;
+  background: url(../../img/next.png) right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -1118,7 +1118,7 @@ body.lb-disable-scrolling {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(../images/close.png) top right no-repeat;
+  background: url(../../img/close.png) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
@@ -1142,6 +1142,10 @@ body.lb-disable-scrolling {
 
 .gallery-image {
   max-width: 100%;
+}
+
+.gallery-border {
+  border: 1px solid #A9A9A9;
 }
 
 .image-description {
