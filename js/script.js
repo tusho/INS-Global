@@ -1,10 +1,10 @@
-var open = false;
+var openNav = false;
 
 $("body").click(function() {
-  if(open === true) {
+  if(openNav === true) {
     $('.navbar-fixed-bottom').animate({ height: '0px' });
     $(this).css('backgroundPosition', 'top left');
-    open = false;
+    openNav = false;
   }
 })
 
@@ -16,54 +16,54 @@ $("#menu-toggle").click(function(e) {
 
 $('#footerSlideButton').click(function (e) {
     e.stopPropagation();
-    if(open === false) {
+    if(openNav === false) {
         $('.navbar-fixed-bottom').animate({ height: '255px' });
         $(this).css('backgroundPosition', 'bottom left');
-        open = true;
+        openNav = true;
     } else {
         $('.navbar-fixed-bottom').animate({ height: '0px' });
         $(this).css('backgroundPosition', 'top left');
-        open = false;
+        openNav = false;
     }
 });
 
+jQuery("#inatureskincare, #lucaspapaw, #wotnot").hover(function(){
+        jQuery(this).css( 'cursor', 'pointer' );
+        jQuery(this).find('h2').toggleClass("hover");
+    });
+
+jQuery("#inatureskincare, #lucaspapaw, #wotnot").click(function(){
+        window.open($(this).find("a").attr("href"));
+       return false;
+    });
+
+jQuery("#shopinature, #shoplucaspapaw, #shopwotnot").click(function(){
+        window.open($(this).find("a").attr("href"));
+       return false;
+    });
+
 $(function () {
 
-    // init the validator
-    // validator files are included in the download package
-    // otherwise download from http://1000hz.github.io/bootstrap-validator
-
     $('#contact-form-distributor').validator();
-
-
-    // when the form is submitted
     $('#contact-form-distributor').on('submit', function (e) {
 
-        // if the validator does not prevent form submit
         if (!e.isDefaultPrevented()) {
             var url = "contact-form-distributor.php";
 
-            // POST values in the background the the script URL
             $.ajax({
                 type: "POST",
                 url: url,
                 data: $(this).serialize(),
                 success: function (data)
                 {
-                    // data = JSON object that contact-distributor.php returns
-
-                    // we recieve the type of the message: success x danger and apply it to the
                     var messageAlert = 'alert-' + data.type;
                     var messageText = data.message;
-
-                    // let's compose Bootstrap alert box HTML
                     var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
 
-                    // If we have messageAlert and messageText
                     if (messageAlert && messageText) {
-                        // inject the alert to .messages div in our form
+
                         $('#contact-form-distributor').find('.messages').html(alertBox);
-                        // empty the form
+
                         $('#contact-form-distributor')[0].reset();
                     }
                     return false;
@@ -75,42 +75,25 @@ $(function () {
 });
 
 $(function () {
-
-    // init the validator
-    // validator files are included in the download package
-    // otherwise download from http://1000hz.github.io/bootstrap-validator
 
     $('#contact-form-distributor').validator();
-
-
-    // when the form is submitted
     $('#contact-form-distributor').on('submit', function (e) {
 
-        // if the validator does not prevent form submit
         if (!e.isDefaultPrevented()) {
             var url = "contact-form-brandpromo.php";
 
-            // POST values in the background the the script URL
             $.ajax({
                 type: "POST",
                 url: url,
                 data: $(this).serialize(),
                 success: function (data)
                 {
-                    // data = JSON object that contact-distributor.php returns
-
-                    // we recieve the type of the message: success x danger and apply it to the
                     var messageAlert = 'alert-' + data.type;
                     var messageText = data.message;
-
-                    // let's compose Bootstrap alert box HTML
                     var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
 
-                    // If we have messageAlert and messageText
                     if (messageAlert && messageText) {
-                        // inject the alert to .messages div in our form
                         $('#contact-form-distributor').find('.messages').html(alertBox);
-                        // empty the form
                         $('#contact-form-distributor')[0].reset();
                     }
                     return false;
@@ -124,41 +107,24 @@ $(function () {
 
 $(function () {
 
-    // init the validator
-    // validator files are included in the download package
-    // otherwise download from http://1000hz.github.io/bootstrap-validator
-
     $('#contact-form-brandpromo').validator();
-
-
-    // when the form is submitted
     $('#contact-form-brandpromo').on('submit', function (e) {
 
-        // if the validator does not prevent form submit
         if (!e.isDefaultPrevented()) {
             var url = "contact-form-brandpromo.php";
 
-            // POST values in the background the the script URL
             $.ajax({
                 type: "POST",
                 url: url,
                 data: $(this).serialize(),
                 success: function (data)
                 {
-                    // data = JSON object that contact-distributor.php returns
-
-                    // we recieve the type of the message: success x danger and apply it to the
                     var messageAlert = 'alert-' + data.type;
                     var messageText = data.message;
-
-                    // let's compose Bootstrap alert box HTML
                     var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
 
-                    // If we have messageAlert and messageText
                     if (messageAlert && messageText) {
-                        // inject the alert to .messages div in our form
                         $('#contact-form-brandpromo').find('.messages').html(alertBox);
-                        // empty the form
                         $('#contact-form-brandpromo')[0].reset();
                     }
                     return false;
