@@ -45,7 +45,6 @@ jQuery("#shopinature, #shoplucaspapaw, #shopwotnot").click(function(){
     $(function () {
       $('#joinbutton').on('click', function (event) {
           event.preventDefault();
-        alert("Huh");
         var email = 'info@inatureskincare.com';
         var subject = 'Enquiry to join INS';
         var emailBody = '';
