@@ -322,6 +322,8 @@ h1 {
   padding-top: 5px;
   padding-bottom: 2px;
   margin-top: 2px;
+  -webkit-appearance: none !important;
+  border-radius: 0 !important;
 }
 
 .copyright.container-fluid a {
@@ -1118,5 +1120,15 @@ body.lb-disable-scrolling {
 .hover {
     // text-decoration: none;
     color: #cccccc !important;
+}
 
+
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
 }
