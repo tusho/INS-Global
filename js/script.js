@@ -42,6 +42,17 @@ jQuery("#shopinature, #shoplucaspapaw, #shopwotnot").click(function(){
        return false;
     });
 
+    $(function () {
+      $('#joinbutton').on('click', function (event) {
+          event.preventDefault();
+        alert("Huh");
+        var email = 'info@inatureskincare.com';
+        var subject = 'Enquiry to join INS';
+        var emailBody = '';
+        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+      });
+    });
+
 $(function () {
 
     $('#contact-form-distributor').validator();
