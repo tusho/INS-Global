@@ -1,0 +1,21 @@
+/* ~~~~~~~~~~Fonts~~~~~~~~~~ */
+
+@font-face {
+    font-family: "avenir-medium";
+    src: url(../fonts/avenir-medium.ttf) format("truetype");
+}
+
+/* @font-face {
+    font-family: "avenir-regular";
+    src: url(../fonts/avenir-regular.ttf) format("truetype");
+} */
+
+@font-face {
+    font-family: "avenir-light";
+    src: url(../fonts/avenir-light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "avenir-roman";
+    src: url(../fonts/avenir-roman.ttf) format("truetype");
+}
