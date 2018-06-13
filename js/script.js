@@ -42,15 +42,19 @@ jQuery("#shopinature, #shoplucaspapaw, #shopwotnot").click(function(){
        return false;
     });
 
-    $(function () {
-      $('#joinbutton').on('click', function (event) {
-          event.preventDefault();
-        var email = 'info@inatureskincare.com';
-        var subject = 'Enquiry to join INS';
-        var emailBody = '';
-        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
-      });
+jQuery("#joinbutton").click(function(){
+        window.open($(this).find("a").attr("href"));
+       return false;
     });
+    // $(function () {
+    //   $('#joinbutton').on('click', function (event) {
+    //     event.preventDefault();
+    //     var email = 'info@inatureskincare.com';
+    //     var subject = 'Enquiry to join INS';
+    //     var emailBody = '';
+    //     window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+    //   });
+    // });
 
 $(function () {
 

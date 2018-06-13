@@ -353,19 +353,20 @@ h1 {
 .join-btn {
   display: inline-block;
   float: right;
-  color: white;
+  color: white !important;
+  font-family: 'avenir-roman', 'sans-serif';
+  font-size: 0.5em;
+  text-align: center;
+  line-height: 22px;
+  text-decoration: none !important;
   border: none;
   background-color: #2b2a29;
   cursor: pointer;
-  font-family: 'avenir-roman', 'sans-serif';
   text-transform: uppercase;
   height: 29px;
   width: 82px;
-  font-size: 0.5em;
   padding-top: 4px;
   padding-bottom: 3px;
-  // margin-top: 26px;
-  // margin-bottom: 24px
 }
 
 input#mce-FNAME.form-input.form-input-distribution, input#mce-MOBILE.form-input.form-input-distribution, input#mce-EMAIL.form-input.form-input-distribution, input#mce-MESSAGE.form-input.form-input-distribution {
@@ -864,27 +865,6 @@ input .input-data-error {
 }
 
 
-/* ~~~~~~~~~~Fonts~~~~~~~~~~ */
-
-@font-face {
-    font-family: "avenir-medium";
-    src: url(../fonts/avenir-medium.ttf) format("truetype");
-}
-
-/* @font-face {
-    font-family: "avenir-regular";
-    src: url(../fonts/avenir-regular.ttf) format("truetype");
-} */
-
-@font-face {
-    font-family: "avenir-light";
-    src: url(../fonts/avenir-light.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "avenir-roman";
-    src: url(../fonts/avenir-roman.ttf) format("truetype");
-}
 
 
 /* ~~~~~~~~~~Lightbox Gallery~~~~~~~~~~ */
